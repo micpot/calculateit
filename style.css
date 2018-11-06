@@ -1,0 +1,46 @@
+body {
+  font-size: 64px;
+  background-color: white; }
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px;
+  grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "main main main main" "main main main main"; }
+  .container .header {
+    grid-area: header;
+    background-color: black;
+    color: white; }
+  .container .item-header {
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    text-align: right; }
+  .container .btn {
+    background-color: dimgray;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 4px 2px;
+    border-radius: 50%; }
+  .container .silver {
+    background-color: silver;
+    color: black; }
+  .container .orange {
+    background-color: orange; }
+  .container .wide {
+    border-radius: 0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-radius: 25px; }
+  .container button {
+    font-size: 26px; }
+  .container .item-sub-header {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    font-size: 10px; }
+  .container .active {
+    background-color: green; }
+
+/*# sourceMappingURL=style.css.map */

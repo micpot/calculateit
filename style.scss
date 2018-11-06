@@ -1,0 +1,64 @@
+body {
+    font-size: 64px;
+    background-color: white;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px;
+  grid-template-areas:
+  "header header header header"
+  "main main main main"
+  "main main main main"
+  "main main main main"
+  "main main main main"
+  "main main main main";
+
+.header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+    
+}
+
+.item-header {
+  grid-column-start: 3;
+  grid-column-end: span 2;
+  text-align: right;
+}
+.btn {
+  background-color: dimgray;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+.silver {
+  background-color: silver;
+  color: black;
+}
+.orange {
+  background-color: orange;
+}
+.wide {
+    border-radius: 0;
+    grid-column-start: 1;
+    grid-column-end:5;
+    border-radius: 25px;
+}
+button {
+  font-size: 26px;
+}
+.item-sub-header{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    font-size : 10px;
+}
+.active {
+  background-color: green;
+}
+}
